@@ -1,2 +1,1 @@
-const answer = 42;
-export default answer;
+export {default as chain} from './chain.js';
