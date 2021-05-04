@@ -29,29 +29,30 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-chain">chain</a></span></span></li>
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_chain">_chain</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-chain">chain</a></span></span></li>
 </ul>
 </div>
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/chain.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
- * Chains input iterables one after the other. Returns an iterator that yields
- * all values of the first input iterable, then all values of the second, etc.
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import _chain from &apos;./_chain.js&apos;;
+
+/**
+ * Chains input iterables one after the other. Returns an iterable iterator
+ * that yields all values of the first input iterable, then all values of the
+ * second, etc.
  *
  * @example
  * // returns [ 0 , 1 , 0 , 1 , 2 ]
- * list( chain( [ range( 2 ) , range( 3 ) ] ) ) ;
+ * list( chain( range( 2 ) , range( 3 ) ) ) ;
  *
- * @param {Iterable[]} iterables - The input iterables to chain.
- * @returns {Iterator}
+ * @param {...Iterable} iterables - The input iterables to chain.
+ * @returns {IterableIterator}
  *
  */
-export default function* chain(iterables) {
-	for (const iterable of iterables) {
-		yield* iterable;
-	}
-}
+const chain = (...iterables) =&gt; _chain(iterables);
+export default chain;
 </code></pre>
 
 </div>

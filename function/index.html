@@ -29,7 +29,8 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-chain">chain</a></span></span></li>
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_chain">_chain</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-chain">chain</a></span></span></li>
 </ul>
 </div>
 </nav>
@@ -52,8 +53,43 @@
         <p>
           
           
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-chain">chain</a></span></span><span class="code" data-ice="signature">(iterables: ...<span>Iterable</span>): <span>IterableIterator</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Chains input iterables one after the other.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+<table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Static Private Summary</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">private</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
           <span data-ice="generator">*</span>
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-chain">chain</a></span></span><span class="code" data-ice="signature">(iterables: <span><span>Iterable</span><span>[]</span></span>): <span>Iterator</span></span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-_chain">_chain</a></span></span><span class="code" data-ice="signature">(iterables: <span><span>Iterable</span><span>[]</span></span>): <span>IterableIterator</span></span>
         </p>
       </div>
       <div>
@@ -80,20 +116,106 @@
     
     
     
-    <span data-ice="generator">*</span>
-    <span class="code" data-ice="name">chain</span><span class="code" data-ice="signature">(iterables: <span><span>Iterable</span><span>[]</span></span>): <span>Iterator</span></span>
+    
+    <span class="code" data-ice="name">chain</span><span class="code" data-ice="signature">(iterables: ...<span>Iterable</span>): <span>IterableIterator</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/chain.js.html#lineNumber13">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/chain.js.html#lineNumber16">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import chain from &apos;<span><a href="file/src/chain.js.html#lineNumber13">@iterable-iterator/chain/src/chain.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import chain from &apos;<span><a href="file/src/chain.js.html#lineNumber16">@iterable-iterator/chain/src/chain.js</a></span>&apos;</code></pre></div>
   
   
-  <div data-ice="description"><p>Chains input iterables one after the other. Returns an iterator that yields
-all values of the first input iterable, then all values of the second, etc.</p>
+  <div data-ice="description"><p>Chains input iterables one after the other. Returns an iterable iterator
+that yields all values of the first input iterable, then all values of the
+second, etc.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">iterables</td>
+      <td data-ice="type" class="code">...<span>Iterable</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The input iterables to chain.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>IterableIterator</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">// returns [ 0 , 1 , 0 , 1 , 2 ]
+list( chain( range( 2 ) , range( 3 ) ) ) ;</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<h2 data-ice="title">Static Private </h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-_chain">
+    <span class="access" data-ice="access">private</span>
+    
+    
+    
+    
+    <span data-ice="generator">*</span>
+    <span class="code" data-ice="name">_chain</span><span class="code" data-ice="signature">(iterables: <span><span>Iterable</span><span>[]</span></span>): <span>IterableIterator</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/_chain.js.html#lineNumber13">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import _chain from &apos;<span><a href="file/src/_chain.js.html#lineNumber13">@iterable-iterator/chain/src/_chain.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Chains input iterables one after the other. Returns an iterable iterator
+that yields all values of the first input iterable, then all values of the
+second, etc.</p>
 </div>
 
   
@@ -123,7 +245,7 @@ all values of the first input iterable, then all values of the second, etc.</p>
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span>Iterator</span></td>
+          <td class="return-type code" data-ice="returnType"><span>IterableIterator</span></td>
           
         </tr>
       </tbody>
@@ -146,7 +268,7 @@ all values of the first input iterable, then all values of the second, etc.</p>
   <div class="example-doc" data-ice="exampleDoc">
       
       <pre class="prettyprint source-code"><code data-ice="exampleCode">// returns [ 0 , 1 , 0 , 1 , 2 ]
-list( chain( [ range( 2 ) , range( 3 ) ] ) ) ;</code></pre>
+list( _chain( [ range( 2 ) , range( 3 ) ] ) ) ;</code></pre>
     </div>
 </div>
 

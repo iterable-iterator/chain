@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">Reference | @iterable-iterator/chain</title>
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/_chain.js | @iterable-iterator/chain</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -35,83 +35,26 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1>References</h1>
+<div class="content" data-ice="content"><h1 data-ice="title">src/_chain.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * Chains input iterables one after the other. Returns an iterable iterator
+ * that yields all values of the first input iterable, then all values of the
+ * second, etc.
+ *
+ * @example
+ * // returns [ 0 , 1 , 0 , 1 , 2 ]
+ * list( _chain( [ range( 2 ) , range( 3 ) ] ) ) ;
+ *
+ * @param {Iterable[]} iterables - The input iterables to chain.
+ * @returns {IterableIterator}
+ */
+export default function* _chain(iterables) {
+	for (const iterable of iterables) {
+		yield* iterable;
+	}
+}
+</code></pre>
 
-<div class="identifiers-wrap">
-  <div>
-    
-  <div data-ice="dirSummaryWrap">
-      
-      <div data-ice="dirSummary"><table class="summary" data-ice="summary">
-  <thead><tr><td data-ice="title" colspan="3">summary</td></tr></thead>
-  <tbody>
-  
-  <tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">private</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          <span data-ice="kind-icon" class="kind-function">F</span>
-          
-          <span data-ice="generator">*</span>
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-_chain">_chain</a></span></span><span class="code" data-ice="signature">(iterables: <span><span>Iterable</span><span>[]</span></span>): <span>IterableIterator</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Chains input iterables one after the other.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          <span data-ice="kind-icon" class="kind-function">F</span>
-          
-          
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-chain">chain</a></span></span><span class="code" data-ice="signature">(iterables: ...<span>Iterable</span>): <span>IterableIterator</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Chains input iterables one after the other.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-</tbody>
-</table>
-</div>
-    </div>
-</div>
-
-  
-</div>
 </div>
 
 <footer class="footer">

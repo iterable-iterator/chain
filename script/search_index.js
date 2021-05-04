@@ -1,5 +1,11 @@
 window.esdocSearchIndex = [
   [
+    "@iterable-iterator/chain/src/_chain.js~_chain",
+    "function/index.html#static-function-_chain",
+    "<span>_chain</span> <span class=\"search-result-import-path\">@iterable-iterator/chain/src/_chain.js</span>",
+    "function"
+  ],
+  [
     "@iterable-iterator/chain/src/chain.js~chain",
     "function/index.html#static-function-chain",
     "<span>chain</span> <span class=\"search-result-import-path\">@iterable-iterator/chain/src/chain.js</span>",
@@ -286,6 +292,12 @@ window.esdocSearchIndex = [
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
     "src/.external-ecmascript.js~undefined",
     "external"
+  ],
+  [
+    "src/_chain.js",
+    "file/src/_chain.js.html",
+    "src/_chain.js",
+    "file"
   ],
   [
     "src/chain.js",

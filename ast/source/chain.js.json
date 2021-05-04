@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 466,
+  "end": 486,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 466,
+    "end": 486,
     "loc": {
       "start": {
         "line": 1,
@@ -29,278 +29,492 @@
     "sourceType": "module",
     "body": [
       {
-        "type": "ExportDefaultDeclaration",
-        "start": 361,
-        "end": 465,
+        "type": "ImportDeclaration",
+        "start": 0,
+        "end": 33,
         "loc": {
           "start": {
-            "line": 13,
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 1,
+            "column": 33
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportDefaultSpecifier",
+            "start": 7,
+            "end": 13,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 7
+              },
+              "end": {
+                "line": 1,
+                "column": 13
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 7,
+              "end": 13,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 7
+                },
+                "end": {
+                  "line": 1,
+                  "column": 13
+                },
+                "identifierName": "_chain"
+              },
+              "name": "_chain"
+            }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 19,
+          "end": 32,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 19
+            },
+            "end": {
+              "line": 1,
+              "column": 32
+            }
+          },
+          "extra": {
+            "rawValue": "./_chain.js",
+            "raw": "'./_chain.js'"
+          },
+          "value": "./_chain.js"
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Chains input iterables one after the other. Returns an iterable iterator\n * that yields all values of the first input iterable, then all values of the\n * second, etc.\n *\n * @example\n * // returns [ 0 , 1 , 0 , 1 , 2 ]\n * list( chain( range( 2 ) , range( 3 ) ) ) ;\n *\n * @param {...Iterable} iterables - The input iterables to chain.\n * @returns {IterableIterator}\n *\n ",
+            "start": 35,
+            "end": 412,
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 15,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "Identifier",
+        "start": 413,
+        "end": 463,
+        "loc": {
+          "start": {
+            "line": 16,
+            "column": 0
+          },
+          "end": {
+            "line": 16,
+            "column": 50
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 419,
+            "end": 462,
+            "loc": {
+              "start": {
+                "line": 16,
+                "column": 6
+              },
+              "end": {
+                "line": 16,
+                "column": 49
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 419,
+              "end": 424,
+              "loc": {
+                "start": {
+                  "line": 16,
+                  "column": 6
+                },
+                "end": {
+                  "line": 16,
+                  "column": 11
+                },
+                "identifierName": "chain"
+              },
+              "name": "chain",
+              "leadingComments": null
+            },
+            "init": {
+              "type": "ArrowFunctionExpression",
+              "start": 427,
+              "end": 462,
+              "loc": {
+                "start": {
+                  "line": 16,
+                  "column": 14
+                },
+                "end": {
+                  "line": 16,
+                  "column": 49
+                }
+              },
+              "id": null,
+              "generator": false,
+              "expression": true,
+              "async": false,
+              "params": [
+                {
+                  "type": "RestElement",
+                  "start": 428,
+                  "end": 440,
+                  "loc": {
+                    "start": {
+                      "line": 16,
+                      "column": 15
+                    },
+                    "end": {
+                      "line": 16,
+                      "column": 27
+                    }
+                  },
+                  "argument": {
+                    "type": "Identifier",
+                    "start": 431,
+                    "end": 440,
+                    "loc": {
+                      "start": {
+                        "line": 16,
+                        "column": 18
+                      },
+                      "end": {
+                        "line": 16,
+                        "column": 27
+                      },
+                      "identifierName": "iterables"
+                    },
+                    "name": "iterables"
+                  }
+                }
+              ],
+              "body": {
+                "type": "CallExpression",
+                "start": 445,
+                "end": 462,
+                "loc": {
+                  "start": {
+                    "line": 16,
+                    "column": 32
+                  },
+                  "end": {
+                    "line": 16,
+                    "column": 49
+                  }
+                },
+                "callee": {
+                  "type": "Identifier",
+                  "start": 445,
+                  "end": 451,
+                  "loc": {
+                    "start": {
+                      "line": 16,
+                      "column": 32
+                    },
+                    "end": {
+                      "line": 16,
+                      "column": 38
+                    },
+                    "identifierName": "_chain"
+                  },
+                  "name": "_chain"
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "start": 452,
+                    "end": 461,
+                    "loc": {
+                      "start": {
+                        "line": 16,
+                        "column": 39
+                      },
+                      "end": {
+                        "line": 16,
+                        "column": 48
+                      },
+                      "identifierName": "iterables"
+                    },
+                    "name": "iterables"
+                  }
+                ]
+              }
+            },
+            "leadingComments": null
+          }
+        ],
+        "kind": "const",
+        "leadingComments": [],
+        "name": "_",
+        "trailingComments": []
+      },
+      {
+        "type": "Identifier",
+        "start": 464,
+        "end": 485,
+        "loc": {
+          "start": {
+            "line": 17,
             "column": 0
           },
           "end": {
             "line": 17,
-            "column": 1
+            "column": 21
           }
         },
         "declaration": {
-          "type": "FunctionDeclaration",
-          "start": 376,
-          "end": 465,
+          "type": "Identifier",
+          "start": 479,
+          "end": 484,
           "loc": {
             "start": {
-              "line": 13,
+              "line": 17,
               "column": 15
             },
             "end": {
               "line": 17,
-              "column": 1
+              "column": 20
+            },
+            "identifierName": "chain"
+          },
+          "name": "chain"
+        },
+        "name": "_",
+        "leadingComments": [],
+        "trailingComments": []
+      },
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 464,
+        "end": 485,
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 0
+          },
+          "end": {
+            "line": 17,
+            "column": 21
+          }
+        },
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 413,
+          "end": 463,
+          "loc": {
+            "start": {
+              "line": 16,
+              "column": 0
+            },
+            "end": {
+              "line": 16,
+              "column": 50
             }
           },
-          "id": {
-            "type": "Identifier",
-            "start": 386,
-            "end": 391,
-            "loc": {
-              "start": {
-                "line": 13,
-                "column": 25
-              },
-              "end": {
-                "line": 13,
-                "column": 30
-              },
-              "identifierName": "chain"
-            },
-            "name": "chain",
-            "leadingComments": null
-          },
-          "generator": true,
-          "expression": false,
-          "async": false,
-          "params": [
+          "declarations": [
             {
-              "type": "Identifier",
-              "start": 392,
-              "end": 401,
+              "type": "VariableDeclarator",
+              "start": 419,
+              "end": 462,
               "loc": {
                 "start": {
-                  "line": 13,
-                  "column": 31
+                  "line": 16,
+                  "column": 6
                 },
                 "end": {
-                  "line": 13,
-                  "column": 40
-                },
-                "identifierName": "iterables"
+                  "line": 16,
+                  "column": 49
+                }
               },
-              "name": "iterables"
-            }
-          ],
-          "body": {
-            "type": "BlockStatement",
-            "start": 403,
-            "end": 465,
-            "loc": {
-              "start": {
-                "line": 13,
-                "column": 42
-              },
-              "end": {
-                "line": 17,
-                "column": 1
-              }
-            },
-            "body": [
-              {
-                "type": "ForOfStatement",
-                "start": 406,
-                "end": 463,
+              "id": {
+                "type": "Identifier",
+                "start": 419,
+                "end": 424,
                 "loc": {
                   "start": {
-                    "line": 14,
-                    "column": 1
+                    "line": 16,
+                    "column": 6
                   },
                   "end": {
                     "line": 16,
-                    "column": 2
+                    "column": 11
+                  },
+                  "identifierName": "chain"
+                },
+                "name": "chain",
+                "leadingComments": null
+              },
+              "init": {
+                "type": "ArrowFunctionExpression",
+                "start": 427,
+                "end": 462,
+                "loc": {
+                  "start": {
+                    "line": 16,
+                    "column": 14
+                  },
+                  "end": {
+                    "line": 16,
+                    "column": 49
                   }
                 },
-                "left": {
-                  "type": "VariableDeclaration",
-                  "start": 411,
-                  "end": 425,
+                "id": {
+                  "type": "Identifier",
+                  "start": 419,
+                  "end": 424,
                   "loc": {
                     "start": {
-                      "line": 14,
+                      "line": 16,
                       "column": 6
                     },
                     "end": {
-                      "line": 14,
-                      "column": 20
-                    }
+                      "line": 16,
+                      "column": 11
+                    },
+                    "identifierName": "chain"
                   },
-                  "declarations": [
-                    {
-                      "type": "VariableDeclarator",
-                      "start": 417,
-                      "end": 425,
+                  "name": "chain",
+                  "leadingComments": null
+                },
+                "generator": false,
+                "expression": true,
+                "async": false,
+                "params": [
+                  {
+                    "type": "RestElement",
+                    "start": 428,
+                    "end": 440,
+                    "loc": {
+                      "start": {
+                        "line": 16,
+                        "column": 15
+                      },
+                      "end": {
+                        "line": 16,
+                        "column": 27
+                      }
+                    },
+                    "argument": {
+                      "type": "Identifier",
+                      "start": 431,
+                      "end": 440,
                       "loc": {
                         "start": {
-                          "line": 14,
-                          "column": 12
+                          "line": 16,
+                          "column": 18
                         },
                         "end": {
-                          "line": 14,
-                          "column": 20
-                        }
-                      },
-                      "id": {
-                        "type": "Identifier",
-                        "start": 417,
-                        "end": 425,
-                        "loc": {
-                          "start": {
-                            "line": 14,
-                            "column": 12
-                          },
-                          "end": {
-                            "line": 14,
-                            "column": 20
-                          },
-                          "identifierName": "iterable"
+                          "line": 16,
+                          "column": 27
                         },
-                        "name": "iterable"
+                        "identifierName": "iterables"
                       },
-                      "init": null
+                      "name": "iterables"
                     }
-                  ],
-                  "kind": "const"
-                },
-                "right": {
-                  "type": "Identifier",
-                  "start": 429,
-                  "end": 438,
-                  "loc": {
-                    "start": {
-                      "line": 14,
-                      "column": 24
-                    },
-                    "end": {
-                      "line": 14,
-                      "column": 33
-                    },
-                    "identifierName": "iterables"
-                  },
-                  "name": "iterables"
-                },
+                  }
+                ],
                 "body": {
-                  "type": "BlockStatement",
-                  "start": 440,
-                  "end": 463,
+                  "type": "CallExpression",
+                  "start": 445,
+                  "end": 462,
                   "loc": {
                     "start": {
-                      "line": 14,
-                      "column": 35
+                      "line": 16,
+                      "column": 32
                     },
                     "end": {
                       "line": 16,
-                      "column": 2
+                      "column": 49
                     }
                   },
-                  "body": [
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 445,
+                    "end": 451,
+                    "loc": {
+                      "start": {
+                        "line": 16,
+                        "column": 32
+                      },
+                      "end": {
+                        "line": 16,
+                        "column": 38
+                      },
+                      "identifierName": "_chain"
+                    },
+                    "name": "_chain"
+                  },
+                  "arguments": [
                     {
-                      "type": "ExpressionStatement",
-                      "start": 444,
-                      "end": 460,
+                      "type": "Identifier",
+                      "start": 452,
+                      "end": 461,
                       "loc": {
                         "start": {
-                          "line": 15,
-                          "column": 2
+                          "line": 16,
+                          "column": 39
                         },
                         "end": {
-                          "line": 15,
-                          "column": 18
-                        }
-                      },
-                      "expression": {
-                        "type": "YieldExpression",
-                        "start": 444,
-                        "end": 459,
-                        "loc": {
-                          "start": {
-                            "line": 15,
-                            "column": 2
-                          },
-                          "end": {
-                            "line": 15,
-                            "column": 17
-                          }
+                          "line": 16,
+                          "column": 48
                         },
-                        "delegate": true,
-                        "argument": {
-                          "type": "Identifier",
-                          "start": 451,
-                          "end": 459,
-                          "loc": {
-                            "start": {
-                              "line": 15,
-                              "column": 9
-                            },
-                            "end": {
-                              "line": 15,
-                              "column": 17
-                            },
-                            "identifierName": "iterable"
-                          },
-                          "name": "iterable"
-                        }
-                      }
+                        "identifierName": "iterables"
+                      },
+                      "name": "iterables"
                     }
-                  ],
-                  "directives": []
+                  ]
                 }
-              }
-            ],
-            "directives": []
-          },
+              },
+              "leadingComments": null
+            }
+          ],
+          "kind": "const",
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * Chains input iterables one after the other. Returns an iterator that yields\n * all values of the first input iterable, then all values of the second, etc.\n *\n * @example\n * // returns [ 0 , 1 , 0 , 1 , 2 ]\n * list( chain( [ range( 2 ) , range( 3 ) ] ) ) ;\n *\n * @param {Iterable[]} iterables - The input iterables to chain.\n * @returns {Iterator}\n *\n ",
-              "start": 0,
-              "end": 360,
+              "value": "*\n * Chains input iterables one after the other. Returns an iterable iterator\n * that yields all values of the first input iterable, then all values of the\n * second, etc.\n *\n * @example\n * // returns [ 0 , 1 , 0 , 1 , 2 ]\n * list( chain( range( 2 ) , range( 3 ) ) ) ;\n *\n * @param {...Iterable} iterables - The input iterables to chain.\n * @returns {IterableIterator}\n *\n ",
+              "start": 35,
+              "end": 412,
               "loc": {
                 "start": {
-                  "line": 1,
+                  "line": 3,
                   "column": 0
                 },
                 "end": {
-                  "line": 12,
+                  "line": 15,
                   "column": 3
                 }
               }
             }
           ],
           "trailingComments": []
-        },
-        "leadingComments": [
-          {
-            "type": "CommentBlock",
-            "value": "*\n * Chains input iterables one after the other. Returns an iterator that yields\n * all values of the first input iterable, then all values of the second, etc.\n *\n * @example\n * // returns [ 0 , 1 , 0 , 1 , 2 ]\n * list( chain( [ range( 2 ) , range( 3 ) ] ) ) ;\n *\n * @param {Iterable[]} iterables - The input iterables to chain.\n * @returns {Iterator}\n *\n ",
-            "start": 0,
-            "end": 360,
-            "loc": {
-              "start": {
-                "line": 1,
-                "column": 0
-              },
-              "end": {
-                "line": 12,
-                "column": 3
-              }
-            }
-          }
-        ]
+        }
       }
     ],
     "directives": []
@@ -308,16 +522,16 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Chains input iterables one after the other. Returns an iterator that yields\n * all values of the first input iterable, then all values of the second, etc.\n *\n * @example\n * // returns [ 0 , 1 , 0 , 1 , 2 ]\n * list( chain( [ range( 2 ) , range( 3 ) ] ) ) ;\n *\n * @param {Iterable[]} iterables - The input iterables to chain.\n * @returns {Iterator}\n *\n ",
-      "start": 0,
-      "end": 360,
+      "value": "*\n * Chains input iterables one after the other. Returns an iterable iterator\n * that yields all values of the first input iterable, then all values of the\n * second, etc.\n *\n * @example\n * // returns [ 0 , 1 , 0 , 1 , 2 ]\n * list( chain( range( 2 ) , range( 3 ) ) ) ;\n *\n * @param {...Iterable} iterables - The input iterables to chain.\n * @returns {IterableIterator}\n *\n ",
+      "start": 35,
+      "end": 412,
       "loc": {
         "start": {
-          "line": 1,
+          "line": 3,
           "column": 0
         },
         "end": {
-          "line": 12,
+          "line": 15,
           "column": 3
         }
       }
@@ -325,18 +539,488 @@
   ],
   "tokens": [
     {
-      "type": "CommentBlock",
-      "value": "*\n * Chains input iterables one after the other. Returns an iterator that yields\n * all values of the first input iterable, then all values of the second, etc.\n *\n * @example\n * // returns [ 0 , 1 , 0 , 1 , 2 ]\n * list( chain( [ range( 2 ) , range( 3 ) ] ) ) ;\n *\n * @param {Iterable[]} iterables - The input iterables to chain.\n * @returns {Iterator}\n *\n ",
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
       "start": 0,
-      "end": 360,
+      "end": 6,
       "loc": {
         "start": {
           "line": 1,
           "column": 0
         },
         "end": {
-          "line": 12,
+          "line": 1,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "_chain",
+      "start": 7,
+      "end": 13,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 7
+        },
+        "end": {
+          "line": 1,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 14,
+      "end": 18,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 14
+        },
+        "end": {
+          "line": 1,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./_chain.js",
+      "start": 19,
+      "end": 32,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 19
+        },
+        "end": {
+          "line": 1,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 32,
+      "end": 33,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 32
+        },
+        "end": {
+          "line": 1,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Chains input iterables one after the other. Returns an iterable iterator\n * that yields all values of the first input iterable, then all values of the\n * second, etc.\n *\n * @example\n * // returns [ 0 , 1 , 0 , 1 , 2 ]\n * list( chain( range( 2 ) , range( 3 ) ) ) ;\n *\n * @param {...Iterable} iterables - The input iterables to chain.\n * @returns {IterableIterator}\n *\n ",
+      "start": 35,
+      "end": 412,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
           "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 413,
+      "end": 418,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 0
+        },
+        "end": {
+          "line": 16,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "chain",
+      "start": 419,
+      "end": 424,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 6
+        },
+        "end": {
+          "line": 16,
+          "column": 11
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 425,
+      "end": 426,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 12
+        },
+        "end": {
+          "line": 16,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 427,
+      "end": 428,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 14
+        },
+        "end": {
+          "line": 16,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "...",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 428,
+      "end": 431,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 15
+        },
+        "end": {
+          "line": 16,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "iterables",
+      "start": 431,
+      "end": 440,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 18
+        },
+        "end": {
+          "line": 16,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 440,
+      "end": 441,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 27
+        },
+        "end": {
+          "line": 16,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=>",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 442,
+      "end": 444,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 29
+        },
+        "end": {
+          "line": 16,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "_chain",
+      "start": 445,
+      "end": 451,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 32
+        },
+        "end": {
+          "line": 16,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 451,
+      "end": 452,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 38
+        },
+        "end": {
+          "line": 16,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "iterables",
+      "start": 452,
+      "end": 461,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 39
+        },
+        "end": {
+          "line": 16,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 461,
+      "end": 462,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 48
+        },
+        "end": {
+          "line": 16,
+          "column": 49
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 462,
+      "end": 463,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 49
+        },
+        "end": {
+          "line": 16,
+          "column": 50
         }
       }
     },
@@ -355,15 +1039,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 361,
-      "end": 367,
+      "start": 464,
+      "end": 470,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 17,
           "column": 0
         },
         "end": {
-          "line": 13,
+          "line": 17,
           "column": 6
         }
       }
@@ -383,70 +1067,16 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 368,
-      "end": 375,
+      "start": 471,
+      "end": 478,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 17,
           "column": 7
         },
         "end": {
-          "line": 13,
+          "line": 17,
           "column": 14
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "function",
-        "keyword": "function",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "function",
-      "start": 376,
-      "end": 384,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 15
-        },
-        "end": {
-          "line": 13,
-          "column": 23
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "*",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": 10,
-        "updateContext": null
-      },
-      "value": "*",
-      "start": 384,
-      "end": 385,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 23
-        },
-        "end": {
-          "line": 13,
-          "column": 24
         }
       }
     },
@@ -463,407 +1093,16 @@
         "binop": null
       },
       "value": "chain",
-      "start": 386,
-      "end": 391,
+      "start": 479,
+      "end": 484,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 25
+          "line": 17,
+          "column": 15
         },
         "end": {
-          "line": 13,
-          "column": 30
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "(",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 391,
-      "end": 392,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 30
-        },
-        "end": {
-          "line": 13,
-          "column": 31
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "iterables",
-      "start": 392,
-      "end": 401,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 31
-        },
-        "end": {
-          "line": 13,
-          "column": 40
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ")",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 401,
-      "end": 402,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 40
-        },
-        "end": {
-          "line": 13,
-          "column": 41
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "{",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 403,
-      "end": 404,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 42
-        },
-        "end": {
-          "line": 13,
-          "column": 43
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "for",
-        "keyword": "for",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": true,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "for",
-      "start": 406,
-      "end": 409,
-      "loc": {
-        "start": {
-          "line": 14,
-          "column": 1
-        },
-        "end": {
-          "line": 14,
-          "column": 4
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "(",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 410,
-      "end": 411,
-      "loc": {
-        "start": {
-          "line": 14,
-          "column": 5
-        },
-        "end": {
-          "line": 14,
-          "column": 6
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "const",
-        "keyword": "const",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "const",
-      "start": 411,
-      "end": 416,
-      "loc": {
-        "start": {
-          "line": 14,
-          "column": 6
-        },
-        "end": {
-          "line": 14,
-          "column": 11
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "iterable",
-      "start": 417,
-      "end": 425,
-      "loc": {
-        "start": {
-          "line": 14,
-          "column": 12
-        },
-        "end": {
-          "line": 14,
+          "line": 17,
           "column": 20
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "of",
-      "start": 426,
-      "end": 428,
-      "loc": {
-        "start": {
-          "line": 14,
-          "column": 21
-        },
-        "end": {
-          "line": 14,
-          "column": 23
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "iterables",
-      "start": 429,
-      "end": 438,
-      "loc": {
-        "start": {
-          "line": 14,
-          "column": 24
-        },
-        "end": {
-          "line": 14,
-          "column": 33
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ")",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 438,
-      "end": 439,
-      "loc": {
-        "start": {
-          "line": 14,
-          "column": 33
-        },
-        "end": {
-          "line": 14,
-          "column": 34
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "{",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 440,
-      "end": 441,
-      "loc": {
-        "start": {
-          "line": 14,
-          "column": 35
-        },
-        "end": {
-          "line": 14,
-          "column": 36
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "yield",
-        "keyword": "yield",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "yield",
-      "start": 444,
-      "end": 449,
-      "loc": {
-        "start": {
-          "line": 15,
-          "column": 2
-        },
-        "end": {
-          "line": 15,
-          "column": 7
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "*",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": 10,
-        "updateContext": null
-      },
-      "value": "*",
-      "start": 449,
-      "end": 450,
-      "loc": {
-        "start": {
-          "line": 15,
-          "column": 7
-        },
-        "end": {
-          "line": 15,
-          "column": 8
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "iterable",
-      "start": 451,
-      "end": 459,
-      "loc": {
-        "start": {
-          "line": 15,
-          "column": 9
-        },
-        "end": {
-          "line": 15,
-          "column": 17
         }
       }
     },
@@ -880,66 +1119,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 459,
-      "end": 460,
-      "loc": {
-        "start": {
-          "line": 15,
-          "column": 17
-        },
-        "end": {
-          "line": 15,
-          "column": 18
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "}",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 462,
-      "end": 463,
-      "loc": {
-        "start": {
-          "line": 16,
-          "column": 1
-        },
-        "end": {
-          "line": 16,
-          "column": 2
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "}",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 464,
-      "end": 465,
+      "start": 484,
+      "end": 485,
       "loc": {
         "start": {
           "line": 17,
-          "column": 0
+          "column": 20
         },
         "end": {
           "line": 17,
-          "column": 1
+          "column": 21
         }
       }
     },
@@ -956,8 +1145,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 466,
-      "end": 466,
+      "start": 486,
+      "end": 486,
       "loc": {
         "start": {
           "line": 18,
