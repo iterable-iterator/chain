@@ -7,11 +7,11 @@ import {chain} from '../../src/index.js';
 const repr = (x) => JSON.stringify(x);
 
 const macro = (t, iterables, expected) => {
-	t.deepEqual(list(chain(iterables)), list(expected));
+	t.deepEqual(list(chain(...iterables)), list(expected));
 };
 
 macro.title = (title, iterables, output) =>
-	title ?? `chain(${repr(iterables)}) is ${repr(output)}`;
+	title ?? `chain(...${repr(iterables)}) is ${repr(output)}`;
 
 test(macro, [], []);
 test(macro, [[1]], [1]);

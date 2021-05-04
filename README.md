@@ -10,7 +10,7 @@ See [docs](https://iterable-iterator.github.io/chain/index.html).
 
 ```js
 import {chain} from '@iterable-iterator/chain';
-chain(["ABC", "XY"]); // A B C X Y
+chain("ABC", "XY"); // A B C X Y
 ```
 
 [![License](https://img.shields.io/github/license/iterable-iterator/chain.svg)](https://raw.githubusercontent.com/iterable-iterator/chain/main/LICENSE)
