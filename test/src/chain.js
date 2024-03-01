@@ -2,7 +2,7 @@ import test from 'ava';
 
 import {list} from '@iterable-iterator/list';
 import {range} from '@iterable-iterator/range';
-import {chain} from '../../src/index.js';
+import {chain} from '#module';
 
 const repr = (x) => JSON.stringify(x);
 
